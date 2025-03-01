@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --mainColor: #B1F0F7;
+  --secondColor: rgba(0, 255, 255, 0.249);
+  --thiredColor: #002838;
+  --colorLightGreen: #71afb5;
+  --colorDarkAqua: rgba(3, 104, 104, 0.915);
+  --bg-color : #618a90 ;
+  --bg-card : #bad0d39d;
+}
+
+body {
+  position: relative;
+  background-color: rgb(231, 231, 231) !important;
+}
+.bg-color {
+  background-color: var(--mainColor) !important;
+}
+.bg-card {
+  background-color: var(--bg-card) !important;
+}
+
+/* start nav */
+.navbar-brand {
+  border-right: solid 2px var(--mainColor) !important;
+}
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.779) !important;
+}
+
+
+.trips .nav-link {
+  border: 2px solid rgb(2, 205, 205);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.trips .nav-link:hover {
+  transition: all 0.5s;
+  transform: scale(1.11);
+}
+
+.trips .nav-link:hover .trip {
+  color: rgb(236, 117, 25);
+}
+
+/* end nav */
+/* start carsoul */
+.carousel-item img {
+  height: 100vh;
+}
+
+/* end carsoul */
+#sec2 {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* end sec2 */
+.trans-sec textarea {
+  height: 150px !important;
+}
+
+/* translation sec */
+.bg2-section,
+.bg-section {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../images/bg2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-section {
+  background-image: url(../images/bg.jpg);
+}
+
+.overlay {
+  box-shadow: rgba(0, 0, 0, 0.532) 0px 4px 12px;
+  position: relative;
+}
+
+.overlay::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgb(116, 204, 220);
+  opacity: 0;
+  transition: 1s;
+}
+
+.overlay:hover::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  opacity: 0.2;
+}
+
+.overlay::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(116, 204, 220);
+  opacity: 0;
+  transition: 0.9s;
+}
+
+.overlay:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  opacity: 0.3;
+}
+
+.crcl {
+  margin-top: 55%;
+}
+
+.rectangularDivs {
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px gray;
+}
+
+.rectangularDivContent {
+  background-color: rgba(224, 224, 224, 0.696);
+  box-shadow: 1px 1px 30px 5px rgba(164, 6, 216, 0.459);
+}
+
+.rectangularDivContentBar {
+  height: 5px;
+  width: 3%;
+  transition: all 1s;
+}
+
+.rectangularDivContent:hover .rectangularDivContentBar {
+  width: 10%;
+  transition: all 1s;
+}
+
+.cardshadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  overflow: hidden;
+  border: none !important;
+}
+
+.icon-contact {
+  box-shadow: 0px 0px 10px 5px rgb(131, 131, 131);
+}
+
+.section-of-icon {
+  box-shadow: 0px 0px 20px 1px rgb(0, 105, 119);
+}
+
+.icon-of-company {
+  box-shadow: 0px 0px 20px 2px rgb(160, 160, 160);
+}
+.card-hover {
+  width: 40px;
+  height: 4px;
+  transition: 1s all;
+}
+.cardshadow:hover .card-hover {
+  width: 140px;
+  transition: 1s all;
+}
+.cardshadow div img {
+  transition: all 0.5s;
+  transform: scale(1.05);
+}
+.cardshadow:hover div img{
+  transform: scale(1.1);
+}
+
+.socialMediaColor {
+  font-size: 50px;
+  color: #618a90;
+}
+.socialMediaColor:hover {
+  color: var(--mainColor);
+  cursor: pointer;
+}
+.thanksfor-card {
+  transition: all 0.5s;
+}
+.thanksfor-card:hover {
+  transform: scale(0.9);
+}
+.btneffect1:hover {
+  background-color: #cb2e3d !important;
+  border: none !important; 
+}
+.btneffect4:hover {
+  background-color: rgb(54, 240, 240) !important;
+  border: none !important; 
+  color: gray !important;
+}
+.btneffect2:hover {
+  background-color: rgb(48, 126, 61) !important;
+  border: none !important; 
+}
+.btneffect3:hover {
+  background-color: rgb(54, 69, 240) !important;
+  border: none !important; 
+}
+.copy-right {
+  background-image: linear-gradient(to bottom, #e26111, #b82727);
+  color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 991px) {
+  .trips .nav-link:hover {
+    padding-left: 15px;
+    transform: none;
+  }
+  .trips .nav-link , .navbar-brand {
+    border: none !important;
+  }
+}
+@media (min-width:992px) and (min-width:1200px) and (min-width:768px) {
+  .clippathimgr {
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 38% 100%);
+  }
+  .clippathimgl {
+    clip-path: polygon(0 0, 80% 0%, 88% 100%, 0% 100%);
+  }
+}
+@media (max-width:768px) {
+  .clpr {
+    flex-direction: column-reverse;
+  }
+}
